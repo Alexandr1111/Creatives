@@ -1,0 +1,122 @@
+.section-header {
+  background: url("../../optim_images/fullscreen.jpg") no-repeat fixed;
+  height: 100vh;
+  margin: 0 auto;
+  & .section-inner {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+  }
+  & .header1 {
+    margin: 0 auto 152px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 115px;
+    border-bottom: 1px solid #7b7b7b;
+    &__logo {
+      width: 79px;
+      height: 75px;
+    }
+    &__menu-items {
+      display: flex;
+      font-family: 'Gotham', sans-serif;
+      font-weight: 500;
+      justify-content: space-between;
+      width: 60%;
+      font-size: 20px;
+      & li {
+        white-space: nowrap;
+        & a {
+          text-decoration: none;
+          font-family: 'Gotham-book', sans-serif;
+          font-weight: 500;
+          color: #ffffff;
+        }
+      }
+    }
+    &__social {
+      display: flex;
+      & > li {
+        width: 20.5px;
+        margin: 0 11px;
+      }
+      & > li > a {
+        & img {
+          height: 20px;
+          display: block;
+          margin: 0 auto;
+        }
+        & .fb {
+          width: 19px;
+        }
+        & .tw {
+          width: 20px;
+        }
+        & .sk {
+          width: 17.5px;
+        }
+        & .li {
+          width: 17.5px;
+        }
+      }
+    }
+  }
+  & .header2 {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    h1, h2 {
+      text-transform: uppercase;
+      font-family: 'Gotham', sans-serif;
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 152px;
+      margin-bottom: 10px;
+      transform: translate(0px, 200%);
+      opacity: 0;
+      transition: all 1s ease 0.2s;
+      &._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
+    }
+    h2 {
+      color: #11749e;
+      font-size: 25px;
+      letter-spacing: 18px;
+    }
+    & .scroll-panel {
+      margin-top: 20%;
+      & p {
+        font-size: 13px;
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 2px;
+      }
+      a {
+        border: 1px solid #ffffff;
+        display: block;
+        border-radius: 50%;
+        padding: 25px;
+        opacity: .75;
+        animation-name: scroll-panel-jump;
+        animation-duration: 2.2s;
+        animation-iteration-count: infinite;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scroll-panel-jump {
+  50% {
+    transform: translateY(40px);
+  }
+}

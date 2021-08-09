@@ -1,0 +1,70 @@
+.section-blog {
+  & .section-inner {
+    padding-top: 30px;
+  }
+  & .blog-title-container {
+    position: relative;
+    padding: 140px 0;
+    &__title {
+      font-family: 'Gotham', sans-serif;
+      font-size: 37.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &__back {
+      position: absolute;
+      font-size: 247px;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase;
+      opacity: .15;
+      font-weight: 600;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__subtitle {
+    font-size: 30px;
+    font-family: 'Gotham-book', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+  & .blogs-container {
+    display: flex;
+    margin-bottom: 115px;
+    justify-content: center;
+    &__block {
+      max-width: 270px;
+      & img {
+        width: 270px;
+        height: 280px;
+      }
+      & h4 {
+        font-family: 'Gotham', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #11749e;
+        margin-top: 43px;
+        margin-bottom: 25px;
+        overflow: hidden;
+        word-wrap: break-word;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      & p {
+        font-family: 'Gotham-book', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 31px;
+        text-align: center;
+        overflow-x: hidden;
+        word-wrap: break-word;
+      }
+      & + .blogs-container__block {
+        margin-left: 2.5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.section-best-practices {
+  font-family: 'Gotham-book', sans-serif;
+  font-weight: 500;
+  & .section-inner--custom {
+    margin: 0 auto;
+    &:nth-child(odd) {
+      background: #222222;
+    }
+    &:nth-child(even) {
+      background: #f3f3f3;
+      & > .best-practice-block {
+        flex-direction: row-reverse;
+        & > .best-practice-block__text {
+          padding-left: 115px;
+          padding-right: 205px;
+        }
+      }
+    }
+  }
+  & .best-practice-block {
+    display: flex;
+    color: #ffffff;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    &__text {
+      width: 50%;
+      padding-left: 205px;
+      padding-right: 115px;
+      padding-top: 70px;
+      transform: translate(0px, -110%);
+      & nav {
+        & .date,
+        & .genre {
+          font-size: 13px;
+          padding-bottom: 4px;
+          &:hover {
+            border-bottom: 1px solid darken(#ffffff, 30%);
+          }
+          & a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+        & .date {
+          margin-right: 7px;
+        }
+        & .genre {
+          margin-left: 7px;
+        }
+      }
+      & h4 {
+        font-size: 25px;
+        font-family: 'Gotham', sans-serif;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      & p {
+        font-size: 15px;
+        line-height: 30px;
+        & + p {
+          margin-top: 35px;
+        }
+      }
+    }
+    &__img {
+      width: 50%;
+      transform: translate(110%, 0px);
+      & img {
+        max-width: 100%;
+      }
+    }
+    &--reflected {
+      color: #222222;
+      & .best-practice-block__text {
+        transform: translate(0px, 110%);
+      }
+      & > .best-practice-block__img {
+        transform: translate(-110%, 0px);
+        transition: all 1s ease 0.2s;
+      }
+    }
+    &._active {
+      & > .best-practice-block__img {
+        transform: translate(0px, 0px);
+        transition: all 1s ease 0.2s;
+      }
+      & > .best-practice-block__text {
+        transform: translate(0px, 0px);
+        transition: all 1s ease 0.2s;
+      }
+      //&.best-practice-block--reflected {
+      //  & > .best-practice-block__img {
+      //    transform: translate(0px, 0px);
+      //    transition: all 1s ease 0.2s;
+      //  }
+      //}
+    }
+  }
+}
