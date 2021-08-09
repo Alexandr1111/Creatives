@@ -1,0 +1,24 @@
+{
+  "name": "creatives",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp-imagemin": "^7.1.0",
+    "imagemin-pngquant": "^9.0.2"
+  }
+}
