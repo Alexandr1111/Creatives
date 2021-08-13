@@ -1,0 +1,30 @@
+.section-footer {
+  & .section-inner {
+    //padding-top: 30px;
+    //padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    &--map {
+
+    }
+    &--info {
+      color: #ffffff;
+      background-color: #222222;
+    }
+  }
+  &__info {
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    & .copy {
+      font-size: 13px;
+      font-family: 'Gotham-book', sans-serif;
+      font-weight: 500;
+    }
+    & .designed-by {
+
+    }
+  }
+}

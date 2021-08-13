@@ -1,5 +1,13 @@
-const feature_blocks = document.querySelectorAll('.features-container__feature-block');
 
-for(let i = 0; i <= feature_blocks.length; i++) {
-    i %2 === 0 ? feature_blocks[i].classList.add('odd') : feature_blocks[i].classList.add('even');
-}
+
+// async function f2() {
+//     const key_blocks = document.querySelectorAll('.section-key__content ul li');
+//
+//     let BASE_WIDTH = 370;
+//     for (let i = 0; i <= key_blocks.length; i++) {
+//         BASE_WIDTH += 30;
+//         key_blocks[0].style.width = '370px';
+//         key_blocks[i+1].style.width = BASE_WIDTH + 'px';
+//     }
+// }
+

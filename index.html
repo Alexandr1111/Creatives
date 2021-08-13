@@ -12,8 +12,14 @@
     <link rel="stylesheet" href="./styles/css/best-practices.css">
     <link rel="stylesheet" href="./styles/css/blog.css">
     <link rel="stylesheet" href="./styles/css/quick-row.css">
+    <link rel="stylesheet" href="./styles/css/key.css">
+    <link rel="stylesheet" href="./styles/css/our-team.css">
+    <link rel="stylesheet" href="./styles/css/contact.css">
+    <link rel="stylesheet" href="./styles/css/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
-    <script src="./scripts/DOM-manipulation.js" defer></script>
+<!--    <script src="./scripts/DOM-manipulation.js" defer></script>-->
+    <script src="./scripts/features.js" defer></script>
+    <script src="./scripts/our-team.js" defer></script>
 <!--    <script src="./scripts/animations.js" defer></script>-->
     <script src="./scripts/scroll.js" defer></script>
 </head>
@@ -55,9 +61,9 @@
     <!-- features -->
     <section class="section-outer section-features">
         <div class="section-inner">
-            <div class="feature-title-container">
-                <h2 class="feature-title-container__title">WE ARE AN AWESOME AGENCY</h2>
-                <div class="feature-title-container__back">W</div>
+            <div class="title-container">
+                <h2 class="title-container__title">WE ARE AN AWESOME AGENCY</h2>
+                <div class="title-container__back">W</div>
             </div>
             <div class="features-container anim-items">
                 <div class="features-container__feature-block">
@@ -156,9 +162,9 @@
     <!-- blog -->
     <section class="section-outer section-blog">
         <div class="section-inner">
-            <div class="blog-title-container">
-                <h2 class="blog-title-container__title">Let's blog</h2>
-                <div class="blog-title-container__back">B</div>
+            <div class="title-container">
+                <h2 class="title-container__title">Let's blog</h2>
+                <div class="title-container__back">B</div>
             </div>
             <p class="section-blog__subtitle">We love clean design and advanced digital solutions.</p>
             <div class="blogs-container">
@@ -216,26 +222,115 @@
 
     <!-- key -->
     <section class="section-outer section-key">
-        <div class="section-inner">
-
+        <div class="section-inner anim-items">
+            <div class="section-key__content">
+                <h4>Akita Inu Dog</h4>
+                <p>
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                </p>
+                <ul>
+                    <li>Fully Responsive Design</li>
+                    <li>high Quality Code</li>
+                    <li>Different Headers & Layout</li>
+                </ul>
+            </div>
+            <div class="section-key__img">
+                <img src="./optim_images/key-tel.png" alt="tel">
+            </div>
         </div>
     </section>
     <!-- / key -->
 
-    <!-- key -->
-    <section class="section-outer section-key">
+    <!-- our-team -->
+    <section class="section-outer section-our-team">
         <div class="section-inner">
-
+            <div class="title-container">
+                <h2 class="title-container__title">Our team</h2>
+                <div class="title-container__back">T</div>
+            </div>
+            <div class="section-our-team__subtitle">
+                Sales long tail influencer pitch release niche market.
+            </div>
+            <div class="our-team-container anim-items">
+                <div class="our-team-container__block">
+                    <div class="position-container">
+                        <img src="./optim_images/our-team1.jpg" alt="JOHN SNOW's photo">
+                        <h4>JOHN SNOW</h4>
+                    </div>
+                    <span>CEO</span>
+                </div>
+                <div class="our-team-container__block">
+                    <div class="position-container">
+                        <img src="./optim_images/our-team2.jpg" alt="MAX THRONE's photo">
+                        <h4>MAX THRONE</h4>
+                    </div>
+                    <span>WebDesigner</span>
+                </div>
+                <div class="our-team-container__block">
+                    <div class="position-container">
+                        <img src="./optim_images/our-team3.jpg" alt="DAVID SMITH's photo">
+                        <h4>DAVID SMITH</h4>
+                    </div>
+                    <span>Photographer</span>
+                </div>
+                <div class="our-team-container__block">
+                    <div class="position-container">
+                        <img src="./optim_images/our-team4.jpg" alt="LADY SANSA's photo">
+                        <h4>LADY SANSA</h4>
+                    </div>
+                    <span>Photographer</span>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- / key -->
+    <!-- / our-team -->
 
-    <!-- key -->
-    <section class="section-outer section-key">
+    <!-- contact -->
+    <section class="section-outer section-contact">
         <div class="section-inner">
-
+            <div class="title-container">
+                <h2 class="title-container__title">WE’D LOVE TO HEAR ABOUT YOUR PROJECT</h2>
+                <div class="title-container__back">C</div>
+            </div>
+            <form action="#">
+                <label class="text-label">
+                    <input type="text" placeholder="Name" name="name" required />
+                </label>
+                <label class="email-label">
+                    <input type="email" placeholder="Email" name="email" required />
+                </label>
+                <label class="tel-label">
+                    <input type="tel" placeholder="Phone" name="phone" required />
+                </label>
+                <label class="textarea-label">
+                    <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                </label>
+                <button type="submit">
+                    SUBMIT
+                </button>
+            </form>
         </div>
     </section>
-    <!-- / key -->
+    <!-- / contact -->
+
+    <!-- footer -->
+    <footer class="section-outer section-footer">
+        <div class="section-inner section-inner--map">
+            <div class="section-footer__map">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam commodi eos id quam quis sed, suscipit tenetur unde velit! Accusantium adipisci animi architecto beatae cum dolorum eius et id impedit inventore ipsam iusto laboriosam molestiae necessitatibus nemo, nihil nobis odio perferendis, provident quae quia quis sed unde. Amet delectus doloribus dolorum libero maiores maxime molestias provident quia ut veritatis. Accusamus, aperiam architecto asperiores assumenda at, commodi culpa dolore dolorum, enim eos ex fugiat in inventore iusto labore laudantium nesciunt provident quas quasi quia quos repudiandae unde voluptatibus. Consectetur consequuntur excepturi facilis itaque officia officiis, optio placeat quisquam rerum saepe.
+            </div>
+        </div>
+        <div class="section-inner section-inner--info">
+            <div class="section-footer__info">
+                <div class="copy">
+                    &copy;&nbsp;2016&nbsp;PSDfreebies.com&nbsp;&mdash; All Right Reserved
+                </div>
+                <div class="designed-by">
+                    <img src="./optim_images/footer.png" alt="designed by PSDFreebies.com">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / footer -->
 </body>
 </html>

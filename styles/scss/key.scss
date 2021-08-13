@@ -1,0 +1,60 @@
+.section-key {
+  padding: 100px 0;
+  background-color: #181818;
+  background-image: url("./../../optim_images/key-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 52%;
+  background-size: 100% 137%;
+  & .section-inner {
+    display: flex;
+    gap: 24%;
+    &._active {
+      & > .section-key__content,
+      & > .section-key__img {
+        transform: translate(0px, 0px);
+      }
+    }
+  }
+  &__content {
+    color: #ffffff;
+    transform: translate(-110%, 0px);
+    transition: all 1s ease 0.2s;
+    & h4 {
+      font-size: 25px;
+      font-family: 'Gotham', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 125px;
+      margin-bottom: 40px;
+      transition: all 1s ease 0.2s;
+    }
+    & p {
+      font-size: 15px;
+      font-family: 'Gotham-book', sans-serif;
+      font-weight: 500;
+      margin-bottom: 70px;
+      line-height: 27px;
+    }
+    & ul {
+      & > li {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: 'Gotham-book', sans-serif;
+        font-weight: 500;
+        background: #11749e;
+        padding: 13px 0 13px 20px;
+        & + li {
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+  &__img {
+    transform: translate(110%, 0px);
+    width: 40%;
+    margin-left: auto;
+    display: block;
+    transition: all 1s ease 0.2s;
+  }
+}

@@ -1,0 +1,72 @@
+.section-contact {
+  color: #ffffff;
+  background-color: #181818;
+  background-image: url("./../../optim_images/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+  & .section-inner {
+    padding-top: 30px;
+  }
+  & form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 48px 162px 72px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;//
+    grid-template-areas: "name email phone"
+                         "message message message"
+                         ". button .";
+    & input,
+    & textarea {
+      background: transparent;
+      width: 100%;
+      color: #ffffff;
+      font-size: 13.3px;
+      border: 1px solid #ffffff;
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+    & input {
+      max-width: 370px;
+      height: 100%;
+      padding: 15px 0 15px 20px;
+    }
+    & .text-label {
+      grid-area: name;
+    }
+    & .email-label {
+      grid-area: email;
+    }
+    & .tel-label {
+      grid-area: phone;
+    }
+    & .textarea-label {
+      grid-area: message;
+      & textarea {
+        padding: 15px 0 0 20px;
+      }
+    }
+    & button[type="submit"] {
+      grid-area: button;
+      background-color: #11749e;
+      width: 230px;
+      height: 65px;
+      font-size: 24px;
+      font-family: 'Gotham', sans-serif;
+      font-weight: 500;
+      color: #ffffff;
+      outline: none;
+      border: none;
+      margin: auto auto 0;
+      transition: all 0.5s ease 0.1s;
+      &:hover {
+        color: lighten(#11749e, 10%);
+        background-color: #ffffff;
+        transition: all 0.5s ease 0.1s;
+      }
+    }
+  }
+}
