@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./styles/css/our-team.css">
     <link rel="stylesheet" href="./styles/css/contact.css">
     <link rel="stylesheet" href="./styles/css/footer.css">
+    <script src="./scripts/map.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqixbQVAf43uFZ9KmLMO6vGmbrFjCBw7c&callback=initMap&libraries=&v=weekly" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
 <!--    <script src="./scripts/DOM-manipulation.js" defer></script>-->
     <script src="./scripts/features.js" defer></script>
@@ -305,7 +307,7 @@
                 <label class="textarea-label">
                     <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
                 </label>
-                <button type="submit">
+                <button type="submit" class="anim-items">
                     SUBMIT
                 </button>
             </form>
@@ -315,18 +317,18 @@
 
     <!-- footer -->
     <footer class="section-outer section-footer">
-        <div class="section-inner section-inner--map">
-            <div class="section-footer__map">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam commodi eos id quam quis sed, suscipit tenetur unde velit! Accusantium adipisci animi architecto beatae cum dolorum eius et id impedit inventore ipsam iusto laboriosam molestiae necessitatibus nemo, nihil nobis odio perferendis, provident quae quia quis sed unde. Amet delectus doloribus dolorum libero maiores maxime molestias provident quia ut veritatis. Accusamus, aperiam architecto asperiores assumenda at, commodi culpa dolore dolorum, enim eos ex fugiat in inventore iusto labore laudantium nesciunt provident quas quasi quia quos repudiandae unde voluptatibus. Consectetur consequuntur excepturi facilis itaque officia officiis, optio placeat quisquam rerum saepe.
-            </div>
+        <div class="section-inner--map">
+            <div class="section-footer__map" id="map"></div>
         </div>
-        <div class="section-inner section-inner--info">
-            <div class="section-footer__info">
-                <div class="copy">
-                    &copy;&nbsp;2016&nbsp;PSDfreebies.com&nbsp;&mdash; All Right Reserved
-                </div>
-                <div class="designed-by">
-                    <img src="./optim_images/footer.png" alt="designed by PSDFreebies.com">
+        <div class="section-inner--info">
+            <div class="section-inner">
+                <div class="section-footer__info">
+                    <div class="copy">
+                        &copy;&nbsp;2016&nbsp;PSDfreebies.com&nbsp;&mdash; All Right Reserved
+                    </div>
+                    <div class="designed-by">
+                        <img src="./optim_images/footer.png" alt="designed by PSDFreebies.com">
+                    </div>
                 </div>
             </div>
         </div>

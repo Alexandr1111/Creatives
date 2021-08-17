@@ -15,7 +15,6 @@
     justify-content: space-between;
     padding: 20px 0;
     height: 115px;
-    border-bottom: 1px solid #7b7b7b;
     &__logo {
       width: 79px;
       height: 75px;
@@ -25,7 +24,9 @@
       font-family: 'Gotham', sans-serif;
       font-weight: 500;
       justify-content: space-between;
+      align-items: center;
       width: 60%;
+      height: inherit;
       font-size: 20px;
       & li {
         white-space: nowrap;
@@ -34,6 +35,10 @@
           font-family: 'Gotham-book', sans-serif;
           font-weight: 500;
           color: #ffffff;
+          padding-bottom: 42px;
+          &:hover {
+            border-bottom: 5px solid #11749e;
+          }
         }
       }
     }
@@ -48,6 +53,9 @@
           height: 20px;
           display: block;
           margin: 0 auto;
+          &:hover {
+            filter: saturate(100) hue-rotate(129deg);
+          }
         }
         & .fb {
           width: 19px;
@@ -62,6 +70,14 @@
           width: 17.5px;
         }
       }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      border-bottom: 1px solid #7b7b7b;
+      top: 115px;
+      left: 0;
+      right: 0;
     }
   }
   & .header2 {
