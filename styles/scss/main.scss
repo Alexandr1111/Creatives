@@ -7,8 +7,13 @@
   max-width: 1920px;
 }
 
+html,
 body {
+  //height: 100%;
   overflow-x: hidden;
+}
+body {
+  height: 100%;
 }
 
 *, *:before, *:after {

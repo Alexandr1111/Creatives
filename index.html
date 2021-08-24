@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="./styles/css/footer.css">
     <script src="./scripts/map.js" defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqixbQVAf43uFZ9KmLMO6vGmbrFjCBw7c&callback=initMap&libraries=&v=weekly" async defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>-->
+    <script src="./scripts/burger.js" defer></script>
 <!--    <script src="./scripts/DOM-manipulation.js" defer></script>-->
     <script src="./scripts/features.js" defer></script>
     <script src="./scripts/our-team.js" defer></script>
-<!--    <script src="./scripts/animations.js" defer></script>-->
     <script src="./scripts/scroll.js" defer></script>
+<!--    <script src="./scripts/animations.js" defer></script>-->
 </head>
 <body>
     <!-- header -->
@@ -31,19 +32,22 @@
         <div class="section-inner">
             <div class="header1">
                 <img src="./img/logo.png" class="header1__logo" alt="logo">
+                <div class="header1__burger">
+                    <span></span>
+                </div>
                 <ul class="header1__menu-items">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Extensions</a></li>
-                    <li><a href="">Tutorials</a></li>
-                    <li><a href="">Contact us</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Extensions</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
                 <ul class="header1__social">
-                    <li><a href="https://facebook.com/"><img src="./optim_images/facebook.svg" class="fb" alt="facebook link"></a></li>
-                    <li><a href="https://twitter.com/"><img src="./optim_images/twitter.svg" class="tw" alt="twitter link"></a></li>
-                    <li><a href="https://www.skype.com/"><img src="./optim_images/skype.svg" class="sk" alt="skype link"></a></li>
-                    <li><a href="https://www.linkedin.com/"><img src="./optim_images/linkedin.svg" class="li" alt="linkedin link"></a></li>
+                    <li><a href="https://facebook.com/" target="_blank"><img src="./optim_images/facebook.svg" class="fb" alt="facebook link"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="./optim_images/twitter.svg" class="tw" alt="twitter link"></a></li>
+                    <li><a href="https://www.skype.com/" target="_blank"><img src="./optim_images/skype.svg" class="sk" alt="skype link"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="./optim_images/linkedin.svg" class="li" alt="linkedin link"></a></li>
                 </ul>
             </div>
             <div class="header2">
@@ -288,7 +292,7 @@
     <!-- / our-team -->
 
     <!-- contact -->
-    <section class="section-outer section-contact">
+    <section class="section-outer section-contact" id="contact">
         <div class="section-inner">
             <div class="title-container">
                 <h2 class="title-container__title">WE’D LOVE TO HEAR ABOUT YOUR PROJECT</h2>

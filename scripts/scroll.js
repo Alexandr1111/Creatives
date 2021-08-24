@@ -1,9 +1,9 @@
 /*
-    На анимированные объекты(иногда их контейнер) вешаем в html класс "anim-items", в css
+    На анимированные объекты(иногда их контейнер) вешаем в html класс "anim-items"
 */
 
 // Находим все объекты, которые будут поддаваться анимации
-let animItems = document.querySelectorAll('.anim-items');
+const animItems = document.querySelectorAll('.anim-items');
 
 if (animItems.length > 0) {
 
