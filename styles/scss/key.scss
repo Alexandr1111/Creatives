@@ -8,7 +8,8 @@
   background-size: 100% 137%;
   & .section-inner {
     display: flex;
-    gap: 24%;
+    //gap: 24%;
+    gap: 6%;
     &._active {
       & > .section-key__content,
       & > .section-key__img {
@@ -20,6 +21,7 @@
     color: #ffffff;
     transform: translate(-110%, 0px);
     transition: all 1s ease 0.2s;
+    flex: 1 1 65%;
     & h4 {
       font-size: 25px;
       font-family: 'Gotham', sans-serif;
@@ -52,9 +54,59 @@
   }
   &__img {
     transform: translate(110%, 0px);
-    width: 40%;
     margin-left: auto;
     display: block;
     transition: all 1s ease 0.2s;
+    flex: 1 1 35%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section-key {
+    padding: 60px 0 35px 0;
+    & .section-inner {
+      width: 90%;
+      margin: 0 auto;
+      gap: 6%;
+    }
+    &__content {
+      flex: 1 1 65%;
+      & h4 {
+        margin-top: 5%;
+      }
+    }
+    &__img {
+      flex: 1 1 35%;
+      display: flex;
+      align-items: flex-end;
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-key {
+    background-position: center center;
+    background-size: initial;
+    padding: 40px 0 25px 0;
+    & .section-inner {
+      display: block;
+      gap: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__content {
+      transform: translate(0px, 0px);
+      padding: 0 4.5%;
+      & h4 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+    &__img {
+      display: none;
+    }
   }
 }

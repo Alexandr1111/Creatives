@@ -35,3 +35,12 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .section-footer {
+    &__info {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

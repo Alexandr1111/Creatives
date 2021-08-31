@@ -11,8 +11,7 @@
       & > .best-practice-block {
         flex-direction: row-reverse;
         & > .best-practice-block__text {
-          padding-left: 115px;
-          padding-right: 205px;
+          padding: 70px 8% 10px 4%;
         }
       }
     }
@@ -25,9 +24,7 @@
     overflow: hidden;
     &__text {
       width: 50%;
-      padding-left: 205px;
-      padding-right: 115px;
-      padding-top: 70px;
+      padding: 70px 4% 10px 8%;
       transform: translate(0px, -110%);
       & nav {
         & .date,
@@ -67,6 +64,9 @@
     &__img {
       width: 50%;
       transform: translate(110%, 0px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       & img {
         max-width: 100%;
       }
@@ -90,12 +90,29 @@
         transform: translate(0px, 0px);
         transition: all 1s ease 0.2s;
       }
-      //&.best-practice-block--reflected {
-      //  & > .best-practice-block__img {
-      //    transform: translate(0px, 0px);
-      //    transition: all 1s ease 0.2s;
-      //  }
-      //}
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .section-best-practices {
+    & .section-inner--custom {
+      & .best-practice-block {
+        flex-direction: column !important;
+        align-items: center;
+        &__text {
+          width: 60%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          padding-top: 30px;
+          transform: translate(0px, 0px);
+        }
+        &__img {
+          width: 100%;
+          margin-top: 30px;
+          transform: translate(0px, 0px);
+        }
+      }
     }
   }
 }

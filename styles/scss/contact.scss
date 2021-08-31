@@ -14,7 +14,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 48px 162px 72px;
     grid-column-gap: 30px;
-    grid-row-gap: 40px;//
+    grid-row-gap: 40px;
     grid-template-areas: "name email phone"
                          "message message message"
                          ". button .";
@@ -69,6 +69,51 @@
         transition: all 0.5s ease 0.1s;
       }
       &._active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .section-contact {
+    padding-bottom: 67px;
+    background-size: cover;
+    & form {
+      grid-column-gap: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-contact {
+    padding-bottom: 47px;
+    background-size: cover;
+    & .section-inner {
+      padding-top: 0;
+      width: 90%;
+    }
+    & form {
+      padding: 0 4.5%;
+      grid-template-columns: 100%;
+      grid-template-rows: 48px 48px 48px 202px 112px;
+      grid-column-gap: 0;
+      grid-row-gap: 12px;
+      grid-template-areas: "name"
+                           "email"
+                           "phone"
+                           "message"
+                           "button";
+      & input {
+        max-width: initial;
+      }
+      & .textarea-label {
+        margin-top: 40px;
+      }
+      & button[type="submit"] {
+        margin-top: 47px;
         opacity: 1;
       }
     }
