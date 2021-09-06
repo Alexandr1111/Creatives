@@ -9,9 +9,15 @@
 
 html,
 body {
-  //height: 100%;
   overflow-x: hidden;
 }
+
+html {
+  &.lock {
+    height: 100%;
+  }
+}
+
 body {
   height: 100%;
 }

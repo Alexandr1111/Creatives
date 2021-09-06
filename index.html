@@ -16,15 +16,14 @@
     <link rel="stylesheet" href="./styles/css/our-team.css">
     <link rel="stylesheet" href="./styles/css/contact.css">
     <link rel="stylesheet" href="./styles/css/footer.css">
+    <script src="./scripts/scroll-behavior.js" defer></script>
     <script src="./scripts/map.js" defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqixbQVAf43uFZ9KmLMO6vGmbrFjCBw7c&callback=initMap&libraries=&v=weekly" async defer></script>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>-->
     <script src="./scripts/burger.js" defer></script>
     <script src="./scripts/DOM-manipulation.js" defer></script>
     <script src="./scripts/features.js" defer></script>
     <script src="./scripts/our-team.js" defer></script>
     <script src="./scripts/scroll.js" defer></script>
-<!--    <script src="./scripts/animations.js" defer></script>-->
 </head>
 <body>
     <!-- header -->
@@ -38,7 +37,7 @@
                 <ul class="header1__menu-items">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="#">Features</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li><a href="#">Extensions</a></li>
                     <li><a href="#">Tutorials</a></li>
                     <li><a href="#contact">Contact us</a></li>
@@ -55,7 +54,7 @@
                 <h2>Power by PSDfreebies.com</h2>
                 <div class="scroll-panel">
                     <p>Scroll Down</p>
-                    <a href="">
+                    <a href="#features">
                         <img src="./optim_images/arrow.png" alt="scroll down">
                     </a>
                 </div>
@@ -65,7 +64,7 @@
     <!-- / header -->
 
     <!-- features -->
-    <section class="section-outer section-features">
+    <section class="section-outer section-features" id="features">
         <div class="section-inner">
             <div class="title-container">
                 <h2 class="title-container__title">WE ARE AN AWESOME AGENCY</h2>

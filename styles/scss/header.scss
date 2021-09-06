@@ -131,6 +131,7 @@
         border: 1px solid #ffffff;
         display: block;
         border-radius: 50%;
+        outline: none;
         padding: 25px;
         opacity: .75;
         animation-name: scroll-panel-jump;
@@ -295,31 +296,6 @@
       }
       &__social {
         display: none;
-        //display: flex;
-        //& > li {
-        //  width: 16.5px;
-        //  margin: 0 7px;
-        //}
-        //& > li > a {
-        //  & img {
-        //    height: 16px;
-        //    &:hover {
-        //      filter: saturate(100) hue-rotate(129deg);
-        //    }
-        //  }
-        //  & .fb {
-        //    width: 15px;
-        //  }
-        //  & .tw {
-        //    width: 16px;
-        //  }
-        //  & .sk {
-        //    width: 13.5px;
-        //  }
-        //  & .li {
-        //    width: 13.5px;
-        //  }
-        //}
       }
       &:before {
         top: 60px;  // полоска
